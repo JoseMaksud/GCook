@@ -1,0 +1,15 @@
+git config --global user.name NOME
+git config --global user.email EMAIL
+
+dotnet new mvc -o GCook
+
+cd GCook
+
+Ctrl + Shit + P
+    Nuget
+        Microsoft.AspNetCore.Identity.EntityFrameworkCore
+        Microsoft.EntityFrameworkCore
+        Microsoft.EntityFrameworkCore.Design
+        Microsoft.EntityFrameworkCore.Tools
+        Pomelo.EntityFrameworkCore.MySql
+
