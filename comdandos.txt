@@ -13,3 +13,8 @@ Ctrl + Shit + P
         Microsoft.EntityFrameworkCore.Tools
         Pomelo.EntityFrameworkCore.MySql
 
+dotnet ef
+
+dotnet ef migrations add InitialCreate
+
+dotnet ef database update
