@@ -18,3 +18,42 @@ dotnet ef
 dotnet ef migrations add InitialCreate
 
 dotnet ef database update
+
+1 - Criar uma pasta Helpers
+
+2 - Criar as classes abaixo na pasta Helpers:
+    - Helper.cs
+    - TranslateIdentityErrors
+
+3 - Criar na pasta ViewModels as classes abaixo:
+    - LoginVM
+    - RegistroVM
+    - UsuarioVM
+
+4 - Criar uma pasta Services
+
+5 - Criar as interfaces abaixo na pasta Services:
+    - IEmailSender
+    - IUsuarioService
+
+6 - Criar as classes abaixo na pasta Services:
+    - EmailSender
+    - UsuarioService
+
+7 - Alterar o arquivo Program.cs
+
+8 - Criar na pasta Controllers os controllers abaixo:
+    - AdminController
+    - AccountController
+
+9 - Criar ou alterar na pasta Views\Shared
+    - _LoginPartial.cshtml
+    - _Layout.cshtml
+    - _LayoutAccount.cshtml
+    - _LayoutAdmin.cshtml
+
+10 - Criar as Views:
+    - Admin\Index
+    - Account\Login
+    - Account\Registro
+    - Account\ConfirmarEmail

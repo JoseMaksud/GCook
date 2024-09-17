@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GCook.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20240820113034_criar-banco")]
-    partial class criarbanco
+    [Migration("20240917111739_InitialCreate")]
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -568,15 +568,15 @@ namespace GCook.Migrations
                         {
                             Id = "ddf093a6-6cb5-4ff7-9a64-83da34aee005",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "762ab5e7-62e6-4bda-a84f-b5d2b773fe39",
+                            ConcurrencyStamp = "ab83600d-c1ab-480c-abf6-2cee2a36499a",
                             Email = "admin@gcook.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "ADMIN@GCOOK.COM",
                             NormalizedUserName = "ADMIN",
-                            PasswordHash = "AQAAAAIAAYagAAAAEHUW+xmFKBQ2XH6u5MCrt1jccGVbpHFRenxJHpCHKlJ3Mdr8hFT0PuELMsFGEw8JmQ==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEObiniqGL3pbtrM6+JQlH69IFopCdV4znkRqdUtjvtWdUn0VK3yUhSmw7PeBnpiWyw==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "aef214e5-e47a-4c0e-9c8a-0f973143c602",
+                            SecurityStamp = "4fa59591-7e77-4319-89bd-d9f0fa309b3c",
                             TwoFactorEnabled = false,
                             UserName = "Admin"
                         });
