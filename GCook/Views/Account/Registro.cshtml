@@ -1,0 +1,59 @@
+@model GCook.ViewModels.RegistroVM
+@{
+    ViewData["Title"] = "Registro";
+    ViewData["SubTitle"] = Model.Enviado ? "Conta Criada com Sucesso" : "Criar Conta";
+    Layout = "~/Views/Shared/_LayoutAccount.cshtml";
+}
+
+@if (!Model.Enviado)
+{
+    <form class="form-signup" method="post" enctype="multipart/form-data">
+        <div asp-validation-summary="ModelOnly" hidden></div>
+        <div class="form-floating mb-3">
+            <input asp-for="Nome" class="form-control">
+            <label asp-for="Nome"></label>
+            <span asp-validation-for="Nome" class="text-danger text-sm"></span>
+        </div>
+        <div class="form-floating mb-3">
+            <input asp-for="Email" class="form-control">
+            <label asp-for="Email"></label>
+            <span asp-validation-for="Email" class="text-danger text-sm"></span>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-7">
+                <div class="form-floating mb-3">
+                    <input asp-for="DataNascimento" class="form-control">
+                    <label asp-for="DataNascimento"></label>
+                    <span asp-validation-for="DataNascimento" class="text-danger text-sm"></span>
+                </div>
+                <div class="form-floating mb-3">
+                    <input asp-for="Senha" class="form-control">
+                    <label asp-for="Senha"></label>
+                    <span asp-validation-for="Senha" class="text-danger text-sm"></span>
+                </div>
+                <div class="form-floating mb-3">
+                    <input asp-for="ConfirmacaoSenha" class="form-control">
+                    <label asp-for="ConfirmacaoSenha"></label>
+                    <span asp-validation-for="ConfirmacaoSenha" class="text-danger text-sm"></span>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-5 cursor-pointer">
+                <img src="~/img/usuarios/no-photo.png" id="PreviewImage" alt="Foto de Avatar" class="w-100 rounded-3"
+                    onclick="changeImage()" />
+                <div hidden>
+                    <input type="file" asp-for="Foto" accept=".jpg,.jpeg,.png,.gif,.jfif" />
+                </div>
+            </div>
+        </div>
+        <div class="col-12 ps-2 mt-2 mb-3"
+            <div class="form-check text-white fs-6">
+                <input class="form-check-input text-danger fs-5" asp-for="Termos" onclick="verificarTermos()" />
+                <label class="form-check-label mt-1" asp-for="Termos">
+                    Eu concordo com os
+                        <a class="tect-danger" href="javascript:void(0);">termos e politica de privacidade</a>
+                </label>
+            </div>
+        </div>
+            
+    </form>
+}
