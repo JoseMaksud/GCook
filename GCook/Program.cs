@@ -9,7 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 string conexao = builder.Configuration.GetConnectionString("Conexao");
 var versao = ServerVersion.AutoDetect(conexao);
 builder.Services.AddDbContext<AppDbContext>(
-    options => options.UseMySql(conexao, versao)
+    Options => Options.UseMySql(conexao, versao)
 );
 
 builder.Services.AddIdentity<IdentityUser, IdentityRole>(

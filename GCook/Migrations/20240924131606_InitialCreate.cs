@@ -360,7 +360,7 @@ namespace GCook.Migrations
             migrationBuilder.InsertData(
                 table: "AspNetUsers",
                 columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName" },
-                values: new object[] { "ddf093a6-6cb5-4ff7-9a64-83da34aee005", 0, "ab83600d-c1ab-480c-abf6-2cee2a36499a", "admin@gcook.com", true, false, null, "ADMIN@GCOOK.COM", "ADMIN", "AQAAAAIAAYagAAAAEObiniqGL3pbtrM6+JQlH69IFopCdV4znkRqdUtjvtWdUn0VK3yUhSmw7PeBnpiWyw==", null, false, "4fa59591-7e77-4319-89bd-d9f0fa309b3c", false, "Admin" });
+                values: new object[] { "ddf093a6-6cb5-4ff7-9a64-83da34aee005", 0, "a3b3b02d-53d8-49bd-8e85-6420719d340a", "admin@gcook.com", true, false, null, "ADMIN@GCOOK.COM", "ADMIN", "AQAAAAIAAYagAAAAEBOj3yxPYnVISUv/IsjxolW/XIIZV+TSxbZ+OFz70VC9DyWMUCDr/AXr92bRagx/OA==", null, false, "eb81966a-7114-408b-8837-3c655e08d433", false, "Admin" });
 
             migrationBuilder.InsertData(
                 table: "Categoria",

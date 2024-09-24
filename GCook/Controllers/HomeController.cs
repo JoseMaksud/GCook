@@ -31,8 +31,20 @@ public class HomeController : Controller
                 .Include(r => r.Ingredientes)
                 .AsNoTracking()
                 .ToList()
-        }; 
+        };
         return View(home);
+    }
+
+    public IActionResult Receitas(int id)
+    {
+
+        Receita receita = _context.Receitas
+            .Include(r => r.Categoria)
+            .Include(r => r.Ingredientes)
+            .ThenInclude(i => i.Ingrediente)
+            .AsNoTracking()
+            .FirstOrDefault(r => r.Id == id);
+        return View(receita);
     }
 
     public IActionResult Privacy()

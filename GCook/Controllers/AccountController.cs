@@ -71,7 +71,7 @@ public class AccountController : Controller
         register.Enviado = false;
         if (ModelState.IsValid)
         {
-            var result = await _usuarioService.RegistarUsuario(register);
+            var result = await _usuarioService.RegistrarUsuario(register);
             if (result != null)
                 foreach(var error in result)
                 {
