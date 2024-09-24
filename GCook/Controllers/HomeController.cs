@@ -35,7 +35,7 @@ public class HomeController : Controller
         return View(home);
     }
 
-    public IActionResult Receitas(int id)
+    public IActionResult Receita(int id)
     {
 
         Receita receita = _context.Receitas
