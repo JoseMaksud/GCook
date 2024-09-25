@@ -57,7 +57,7 @@ public class AccountController : Controller
         return RedirectToAction("Index", "Home");
     }
 
-    [HttpPost]
+    [HttpGet]
     public IActionResult Registro()
     {
         RegistroVM register = new();

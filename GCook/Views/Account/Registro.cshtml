@@ -78,7 +78,7 @@ else
 @section Scripts {
     <script type="text/javascript">
         let mensagemErro = '';
-        $.(".validation-summary-error ul li").each(function () {
+        $(".validation-summary-error ul li").each(function () {
             mensagemErro += $(this).text() + '<br/>';
         });
         if (mensagemErro != '') {

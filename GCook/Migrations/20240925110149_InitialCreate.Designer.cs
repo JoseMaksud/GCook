@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GCook.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20240924131606_InitialCreate")]
+    [Migration("20240925110149_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -568,15 +568,15 @@ namespace GCook.Migrations
                         {
                             Id = "ddf093a6-6cb5-4ff7-9a64-83da34aee005",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "a3b3b02d-53d8-49bd-8e85-6420719d340a",
+                            ConcurrencyStamp = "aef5b42c-0664-4b7e-822a-6f50f9fbfff7",
                             Email = "admin@gcook.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "ADMIN@GCOOK.COM",
                             NormalizedUserName = "ADMIN",
-                            PasswordHash = "AQAAAAIAAYagAAAAEBOj3yxPYnVISUv/IsjxolW/XIIZV+TSxbZ+OFz70VC9DyWMUCDr/AXr92bRagx/OA==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEKPHExBTZ78mIXzxJArRX5lAgyevEh/dTX9ZD4gGK1sMc2YG0UYhMGSTZZ0xw+4//A==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "eb81966a-7114-408b-8837-3c655e08d433",
+                            SecurityStamp = "452e4d7d-a33e-4a92-8c35-4a50115d75d6",
                             TwoFactorEnabled = false,
                             UserName = "Admin"
                         });
