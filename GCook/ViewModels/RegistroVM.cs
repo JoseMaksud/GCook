@@ -22,6 +22,7 @@ public class RegistroVM
 
     [DataType(DataType.Password)]
     [Display(Name = "Senha de Acesso", Prompt = "Informe uma Senha de Acesso")]
+    [Required(ErrorMessage = "Por favor, informe sua Senha de Acesso")]
     [StringLength(20, MinimumLength = 6, ErrorMessage = "A Senha deve possuir no minimo 6 e no máximo 20 caracteres")]
     public string Senha { get; set; } = null;
 
