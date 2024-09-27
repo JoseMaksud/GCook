@@ -232,6 +232,11 @@ namespace GCook.Migrations
                         {
                             Id = 13,
                             Nome = "Cheddar"
+                        },
+                        new
+                        {
+                            Id = 14,
+                            Nome = "Azeite"
                         });
                 });
 
@@ -289,7 +294,7 @@ namespace GCook.Migrations
                             Dificuldade = 1,
                             Foto = "/img/receitas/1.jpg",
                             Nome = "Carne Moída Mexicana",
-                            Preparo = "",
+                            Preparo = "Comece pela preparação dos ingredientes, pique os pimentões e a cebola em pequenos cubos, se preferir você também pode usar um processador de alimentos.Coloque a carne moída para fritar em uma panela com um pouco de azeite.Quando a carne moída já não estiver mais crua, adicione os pimentões e a cebola, mexendo bem para misturar todos os ingredientes.Aguarde alguns instante e adicione os temperos, mexendo novamente para misturar.Frite por mais alguns minutos a carne com os demais ingredientes.Adicione o Cream Cheese e o Queijo Cheddar, mexendo bem para evitar que queime o fundo e ajudar os queijos a derreterem.Quando os queijos já estiverem bem derretidos e misturados com os demais ingredientes, sirva acompanhado do Pão Sirio ou de Doritos.",
                             Rendimento = 3,
                             TempoPreparo = "20 minutos"
                         });
@@ -392,6 +397,12 @@ namespace GCook.Migrations
                             ReceitaId = 1,
                             IngredienteId = 13,
                             Quantidade = "200g"
+                        },
+                        new
+                        {
+                            ReceitaId = 1,
+                            IngredienteId = 14,
+                            Quantidade = "Um pouco"
                         });
                 });
 
@@ -565,15 +576,15 @@ namespace GCook.Migrations
                         {
                             Id = "ddf093a6-6cb5-4ff7-9a64-83da34aee005",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "aef5b42c-0664-4b7e-822a-6f50f9fbfff7",
+                            ConcurrencyStamp = "56f5f8b0-8fd6-4854-a5e3-d78469d78da2",
                             Email = "admin@gcook.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "ADMIN@GCOOK.COM",
                             NormalizedUserName = "ADMIN",
-                            PasswordHash = "AQAAAAIAAYagAAAAEKPHExBTZ78mIXzxJArRX5lAgyevEh/dTX9ZD4gGK1sMc2YG0UYhMGSTZZ0xw+4//A==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEIhcIE49JQswWw33YKhv8sQ4FwYe8jxyIvsKAEuSw7Q7OGtZDB4ANvz4V8O+roMp9A==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "452e4d7d-a33e-4a92-8c35-4a50115d75d6",
+                            SecurityStamp = "2fb11188-a454-4faa-adfd-1aad58a5ad84",
                             TwoFactorEnabled = false,
                             UserName = "Admin"
                         });

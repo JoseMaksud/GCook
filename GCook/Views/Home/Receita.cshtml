@@ -39,7 +39,7 @@
             </div>
         </div>
         <div class="col-lg-8 fs-5">
-            <p class="mb-3"><b class="fs-4">Descrição</b> @Model.Descricao</p>
+            <p class="mb-3"><b class="fs-4">Descrição:</b> @Model.Descricao</p>
             <p class="fs-4 fw-bold mb-1">Preparo:</p>
             <ul class="row my-2">
                 @foreach (string passo in Model.Preparo.Split('.'))
@@ -48,7 +48,7 @@
                     {
                         <li class="form-check mb-2" onclick="slash('preparo-@i')">
                             <input class="form-check-input" type="checkbox" value="" id="preparo-@i">
-                            <label class="form-check-input" for="preparo-@i">
+                            <label class="form-check-label" for="preparo-@i">
                                 @string.Concat(i, ". ", passo.Trim())
                             </label>
                         </li>
@@ -71,3 +71,4 @@
         </div>
     </div>
 </div>
+
