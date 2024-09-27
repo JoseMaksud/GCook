@@ -47,7 +47,7 @@ public class UsuarioService : IUsuarioService
 
     public async Task<bool> ConfirmarEmail(string userId, string code)
     {
-        var user = await _userManager.FindByEmailAsync(userId);
+        var user = await _userManager.FindByIdAsync(userId);
         if (user == null)
         {
             return false;
@@ -64,7 +64,7 @@ public class UsuarioService : IUsuarioService
         {
             return null;
         }
-        var userAccount = await _userManager.FindByEmailAsync(userId);
+        var userAccount = await _userManager.FindByIdAsync(userId);
         var usuario = await _contexto.Usuarios.Where(u => u.UsuarioId == userId).SingleOrDefaultAsync();
         var perfis = string.Join(",", await _userManager.GetRolesAsync(userAccount));
         var admin = await _userManager.IsInRoleAsync(userAccount, "Administrador");
